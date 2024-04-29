@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bannerPrincipal {
+  margin-top: 68px;
+  width: 99%;
+  height: 85vh;
+  background-image: url(../Images/Banner.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.conoceme {
+  background-color: #e1e0dd;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.conoceme h2,
+.conoceme h1,
+.propuestas h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.conoceme p {
+  font-family: "Montserrat";
+  font-size: 1.25rem;
+  line-height: 30px;
+  text-align: center;
+}
+
+.conoceme__texto,
+.conoceme__imgPerfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conoceme__texto {
+  padding: 50px;
+}
+
+.conoceme__imgPerfil img {
+  padding: 20px;
+  border-radius: 100%;
+}
+
+.conoceme__experiencia {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.experienciaCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experienciaCard p {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.iconoExperiencia {
+  margin-bottom: 10px;
+}
+
+.iconoRedondo {
+  border-radius: 100%;
+}
+
+.txtRosa {
+  color: #ee5ba1;
+}
+
+.imagen-container {
+  width: 100px; /* Ajusta el tamaño según tus necesidades */
+  height: 100px; /* Ajusta el tamaño según tus necesidades */
+  border-radius: 50%; /* Hace que el contenedor sea circular */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que esté fuera del círculo */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; /* Aplica el efecto de sombra */
+}
+
+.iconoRedondo {
+  width: 100%; /* Ajusta el tamaño de la imagen al contenedor */
+  height: 100%; /* Ajusta el tamaño de la imagen al contenedor */
+  object-fit: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+}
+
+.propuestas {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.propuesta {
+  margin-top: 10px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 20px 40px;
+  text-align: justify;
+  border-radius: 10px;
+  border: 3px solid #000;
+  gap: 20px;
+  align-items: center;
+}
+
+.propuesta h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.propuesta p {
+  margin-top: 5px;
+  font-family: "Montserrat";
+  font-size: 1rem;
+}
+
+.imgPropuesta {
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.propuesta1 {
+  background-color: #ff8ed1;
+}
+.propuesta2 {
+  background-color: #ffd180;
+}
+.propuesta3 {
+  background-color: #8ec7ff;
+}
+.propuesta4 {
+  background-color: #96e9b8;
+}
+
+footer {
+  width: 100%;
+  padding: 20px 10px;
+  background-color: #000;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.redesSociales{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footerImg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partidosPolticos{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.linkRRSS{
+  transition: all 0.5s ease;
+}
+
+.linkRRSS:hover{
+  scale: 2;
+}
+
+/*---------- Smartphones ----------- */
+
+@media (max-width: 800px) {
+  .bannerPrincipal {
+    height: 20vh;
+  }
+
+  .conoceme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .conoceme h2,
+  .conoceme h1,
+  .propuestas h2 {
+    font-size: 2rem;
+  }
+
+  .conoceme p {
+    font-family: "Montserrat";
+    font-size: 1rem;
+    line-height: 20px;
+  }
+
+  .conoceme__texto,
+  .conoceme__imgPerfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .conoceme__texto {
+    order: 2;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+  }
+
+  .conoceme__imgPerfil img {
+    border-radius: 100%;
+    width: 40%;
+  }
+
+  .experienciaCard p {
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .propuesta {
+    grid-template-columns: 2fr 2fr;
+    padding: 10px 10px;
+  }
+
+  .propuesta p {
+    margin-top: 5px;
+    font-family: "Montserrat";
+    font-size: 13px;
+  }
+
+  .imgPropuesta {
+    border-radius: 10px;
+  }
+}
+
+/* Tablests */
+@media (min-width: 801px) and (max-width: 1440px) {
+  .bannerPrincipal {
+    margin-top: 68px;
+    width: 99%;
+    height: 40vh;
+    background-image: url(../Images/Banner.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
