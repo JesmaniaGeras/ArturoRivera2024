@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import "~@flaticon/flaticon-uicons/css/all/all";
 html {
   scroll-behavior: smooth;
 }
@@ -101,6 +102,8 @@ body {
   object-fit: cover; /* Ajusta la imagen para que cubra todo el contenedor */
 }
 
+/*Aquí empiezan las propuestas*/
+
 .propuestas {
   margin-top: 10px;
   display: flex;
@@ -110,22 +113,23 @@ body {
 }
 
 .propuesta {
-  margin-top: 10px;
-  width: 90%;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  padding: 20px 40px;
-  text-align: justify;
+  text-align: center;
   border-radius: 10px;
-  border: 3px solid #000;
-  gap: 20px;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  justify-content: center;
+  gap: 5px;
+  transition: all 0.5s ease;
 }
+
 
 .propuesta h3 {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .propuesta p {
@@ -134,25 +138,82 @@ body {
   font-size: 1rem;
 }
 
-.imgPropuesta {
-  height: 100%;
-  object-position: center;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
 .propuesta1 {
   background-color: #ff8ed1;
 }
 .propuesta2 {
-  background-color: #ffd180;
+  background-color: #3FDE74;
 }
 .propuesta3 {
-  background-color: #8ec7ff;
+  background-color: #92D8DC;
 }
 .propuesta4 {
-  background-color: #96e9b8;
+  background-color: #FFD180;
 }
+.propuesta5{
+  background-color: #8EC7FF;
+}
+.propuesta6{
+  background-color: #57DB8E;
+}
+
+.propuesta1:hover {
+  background-color: #ff40b2;
+  transform: scale(1.02);
+}
+.propuesta2:hover {
+  background-color: #1df966;
+  transform: scale(1.02);
+}
+.propuesta3:hover {
+  background-color: #20f4ff;
+  transform: scale(1.02);
+}
+.propuesta4:hover {
+  background-color: #ffaa18;
+  transform: scale(1.02);
+}
+.propuesta5:hover{
+  background-color: #2492ff;
+  transform: scale(1.02);
+}
+.propuesta6:hover{
+  background-color: #06ff6e;
+  transform: scale(1.02);
+}
+
+.propuestasContainer{
+  width: 70%;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.propuestasDerecha{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.propuestas12{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.propuestasIzquierda{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.propuesta45{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+/*Aquí terminan las propuestas*/
 
 footer {
   width: 100%;
@@ -251,10 +312,6 @@ footer {
     line-height: 10px;
   }
 
-  .propuesta {
-    grid-template-columns: 2fr 2fr;
-    padding: 10px 10px;
-  }
 
   .propuesta p {
     margin-top: 5px;
@@ -262,9 +319,51 @@ footer {
     font-size: 13px;
   }
 
-  .imgPropuesta {
-    border-radius: 10px;
-  }
+  /*Aquí empiezan las propuestas*/
+
+.propuestas {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.propuestasContainer{
+  width: 95%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.propuestasDerecha{
+  display: flex;
+  flex-direction: column;
+}
+
+.propuestas12{
+  display: flex;
+  gap: 10px;
+}
+
+.imgPropuesta3{
+  width: 20%;
+}
+
+.propuestasIzquierda{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.propuesta45{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+/*Aquí terminan las propuestas*/
+
 }
 
 /* Tablests */
